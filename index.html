@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<head>
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+    <link rel="icon" href="data:image/png;base64,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">
+    <script src="./functions.js"></script>
+</head>
+<body>
+    <div class = title >Model A Calculator</div> 
+    <div>
+    <table class="borderStyle" background="black.png" class="floatLeft">
+       <tr> 
+          <td colspan="4" height="30"><input type="text" id="screen"/></td> 
+       </tr> 
+        <tr> 
+        <td><input type="button" value="---" id="colorbutton" /> </td> 
+        <td><input type="button" value="---"  onclick="save()" class="func-button" id=colorbutton/> </td> 
+        <td><input type="button" value="---" onclick="load()" class="func-button" id=colorbutton/> </td> 
+        <td><input type="button" value="mult" onclick="display('*')" class="func-button" id=colorbutton/> </td> 
+      </tr> 
+       <tr> 
+          <td><input type="button" value="1" onclick="display('1')" id=colorbutton/> </td> 
+          <td><input type="button" value="2" onclick="display('2')" id=colorbutton/> </td> 
+          <td><input type="button" value="3" onclick="display('3')" id=colorbutton/> </td> 
+          <td><input type="button" value="div" onclick="display('/')" class="func-button" id=colorbutton/> </td> 
+       </tr> 
+       <tr> 
+          <td><input type="button" value="4" onclick="display('4')" id=colorbutton/> </td> 
+          <td><input type="button" value="5" onclick="display('5')" id=colorbutton/> </td> 
+          <td><input type="button" value="6" onclick="display('6')" id=colorbutton/> </td> 
+          <td><input type="button" value="sub" onclick="display('-')" class="func-button"id=colorbutton/> </td> 
+       </tr> 
+       <tr> 
+          <td><input type="button" value="7" onclick="display('7')" id=colorbutton/> </td> 
+          <td><input type="button" value="8" onclick="display('8')" id=colorbutton/> </td> 
+          <td><input type="button" value="9" onclick="display('9')" id=colorbutton/> </td> 
+          <td><input type="button" value="add" onclick="display('+')" class="func-button"id=colorbutton/> </td> 
+       </tr> 
+       <tr> 
+          <td><input type="button" value="." onclick="display('.')" id=colorbutton/> </td> 
+          <td><input type="button" value="0" onclick="display('0')" id=colorbutton/> </td> 
+          <td><input type="button" value="=" onclick="equals()" id=colorbutton/> </td> 
+          <td><input type="button" value="clr" onclick="clr()" class="func-button" id=colorbutton/> </td> 
+       </tr> 
+    </table> 
+   </div>
+      <body id='body'>
+      <button onclick="changeColor();" class="func-button" float=right>Change color</button>
+      </body>
+   </table>
+</body>
+</html>
+

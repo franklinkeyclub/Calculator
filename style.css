@@ -1,0 +1,43 @@
+.title{ 
+margin-bottom: 10px; 
+text-align:center; 
+font-style: italic;
+font-weight: bold;
+width: 240px; 
+color:white; 
+border: solid black 2px; 
+background-color: black;
+}
+input[type="button"] 
+{ 
+background-color: black;
+color: white; 
+font-weight: bold;
+width:100%;
+} 
+input[type="text"] 
+{ 
+border:  black ; 
+height: 30px;
+font-size: larger;
+color: black;
+}
+.func-button{
+font-size: 80%;
+background-color: black;
+color: white; 
+font-weight: bold;
+width:100%;
+}
+.borderStyle{
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+}
+.floatRight{
+float: right;
+}
+.floatLeft{
+    float: left;
+}
+
